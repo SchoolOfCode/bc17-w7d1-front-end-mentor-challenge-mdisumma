@@ -1,0 +1,23 @@
+:root {
+  --black: rgb(20, 20, 20);
+  --gray: rgb(100, 100, 100);
+  --green: rgb(61, 129, 103);
+}
+
+/* <uniquifier>: Use a unique and descriptive class name */
+/* <weight>: Use a value from 100 to 900 */
+
+.fraunces-font-style > {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "SOFT" 0, "WONK" 0;
+}
+
+.montserrat-font-style > {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
