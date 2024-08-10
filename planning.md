@@ -1,5 +1,5 @@
 font-style: Fraunces
-
+container: 810x608
 text:
 
 PERFUME (font size 18, line-height 31, letter spacing 30%)

@@ -1,23 +1,103 @@
 :root {
+  --brown: rgb(243, 234, 227);
+  --white: rgb(255, 255, 255);
   --black: rgb(20, 20, 20);
   --gray: rgb(100, 100, 100);
   --green: rgb(61, 129, 103);
+  --fraunces: "Fraunces", serif;
+  --montserrat: "Montserrat", sans-serif;
 }
 
 /* <uniquifier>: Use a unique and descriptive class name */
 /* <weight>: Use a value from 100 to 900 */
-
-.fraunces-font-style > {
-  font-family: "Fraunces", serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  font-variation-settings: "SOFT" 0, "WONK" 0;
+html {
+  font-size: 10px;
+}
+body * {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--brown);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.montserrat-font-style > {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
+.container {
+  background-color: var(--white);
+  display: flex;
+  border-radius: 1.2rem;
+  width: 48rem;
+  height: 36rem;
+}
+.felx-basis {
+  flex-basis: 50%;
+}
+.category {
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  font-family: var(--montserrat);
+  font-size: 1rem;
+  color: var(--gray);
+}
+h1.title {
+  font-family: var(--fraunces);
+  font-size: 2.6rem;
+  line-height: 2.6rem;
+  color: var(--black);
+  font-weight: 700;
+}
+.text {
+  font-family: var(--montserrat);
+  font-size: 1rem;
+  color: var(--gray);
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+}
+img {
+  height: 100%;
+  border-radius: 0.8rem 0 0 0.8rem;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2.4rem;
+}
+.price {
+  display: flex;
+  align-items: center;
+}
+.price span:first-child {
+  font-family: var(--fraunces);
+  font-size: 2.6rem;
+  line-height: 2.6rem;
+  color: var(--green);
+  font-weight: 700;
+}
+
+.price span:last-child {
+  text-decoration: line-through;
+  margin-left: 1.8rem;
+  font-family: var(--montserrat);
+  font-size: 1rem;
+  color: var(--gray);
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+}
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.6rem;
+  border-radius: 0.6rem;
+  border: none;
+  background-color: var(--green);
+  color: var(--white);
+  font-size: 1rem;
+  margin-top: 0.5rem;
 }
